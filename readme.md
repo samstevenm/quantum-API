@@ -48,7 +48,7 @@ This command will set the lights in ENTRY to 50% and return the following output
     "config": {
         "telnetPort": "23",
         "localIP": "192.168.1.111",
-        "userName": "eng\r\n"
+        "userName": "USERNAME\r\n"
     },
     "area": {
         "name": "entry",
