@@ -23,7 +23,12 @@ The *LIGHT LEVEL* must be a value between 0 and 100.  The *AREA* and it's *integ
 1. Modify the `lutron.ini` file to include:
    1. Your Processor or NWK local IP address
    2. Your Processor or NWK login information
-   3. Your project's list of *AREAS* and *integration IDs* . This should probably be accomplished programmatically (*see to-dos*).
+   3. Your project's list of *AREAS* and *integration IDs* . 
+      - Any spaces in the *AREA* name should be replaced with UNDERSCORES
+      - The *AREA* name goes in the first set of SQUARE BRACKETS (underscored if applicable)
+      - The *itegration ID* goes after the `code =`
+   
+   This should probably be accomplished programmatically (*see to-dos*).
 2. Modify the `index.php` file if you:
    1. Decided to place the `lutron.ini` file somewhere else, or rename it.
    2. Want to show less information; the `proc` and `config` JSON objects are useful for debugging, but should probably not 
