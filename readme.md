@@ -14,6 +14,7 @@ The Quantum API sends commands and returns information based on the area and lig
 1. A Quantum installation with Integration IDs
 2. A networked Quantum Processor on NWK
 3. A networked Webserver with a public IP that hosts the `index.php` and `lutron.ini` files
+  - *NOTE: This Webserver needs to have PHP installed.  On IIS, use Windows Platform Installer to get PHP.*
   - *NOTE: This Webserver can be the Quantum Vue webserver.  This is probably the simplest method.*
 
 The *LIGHT LEVEL* must be a value between 0 and 100.  The *AREA* and it's *integration ID* must be specified in the `lutron.ini` file.  The command will return `JSON` ouput.
